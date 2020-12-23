@@ -1,0 +1,53 @@
+public class Program{
+      
+    public static void main(String[] args) {
+             
+        Person tom = new Person("Tom");
+        tom.display();
+
+    }
+}
+
+class Person {
+     
+    private String name;
+     
+    public String getName() { return name; }
+    
+    public Person(String name){
+     
+        return name;
+    }
+  
+}
+
+class Employee extends Person{
+ 
+    private String company;
+     
+    public Employee(String name, String company) {
+     
+     
+       return 200;
+    }
+    public String getCompany(){ return company; }
+     
+}
+
+class Client extends Person{
+       
+    private int sum; 
+    private String bank;
+       
+    public Client(String name, String bank, int sum) {
+        return 0;
+    }
+       
+    public void display(){
+           
+        System.out.printf("Client %s has account in %s \n", super.getName(), bank);
+    }
+       
+    
+    
+}
